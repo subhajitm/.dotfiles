@@ -118,6 +118,10 @@ fi
 
 # useful aliases
 alias cls=clear
+alias agi="sudo apt-get install"
+alias agr="sudo apt-get remove"
+alias agu="sudo apt-get update"
+alias acs="apt-cache search"
 
 source ~/.git-complete.bash
 
