@@ -122,6 +122,7 @@ alias agi="sudo apt-get install"
 alias agr="sudo apt-get remove"
 alias agu="sudo apt-get update"
 alias acs="apt-cache search"
+alias acp="apt-cache policy"
 
 source ~/.git-complete.bash
 
