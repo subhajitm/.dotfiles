@@ -176,7 +176,16 @@ augroup filetype_vim
 augroup END
 " }}}
 " Coloring {{{
-colorscheme mustang
+" set t_Co=256
+" colorscheme mustang
+if &t_Co >= 256 || has("gui_running")
+   colorscheme mustang
+endif
+
+if &t_Co > 2 || has("gui_running")
+   " switch syntax highlighting on, when the terminal has colors
+   syntax on
+endif
 highlight StatusLine ctermbg=0 ctermfg=32
 highlight StatusLineNC ctermbg=0 ctermfg=24
 highlight Folded ctermbg=242
